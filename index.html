@@ -55,11 +55,11 @@
         background: rgba(255, 255, 255, 0.4); 
       }
     </style>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react/": "https://esm.sh/react@^19.2.4/"
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
   }
 }
 </script>
@@ -83,17 +83,25 @@
             
             <!-- Profile Header -->
             <div class="flex flex-col items-center text-center mb-6">
+                <!-- Container for Circular Aspect Ratio -->
                 <div class="relative group">
+                    <!-- Glow effect (Rounded Full) -->
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse blur-sm"></div>
+                    <!-- 
+                         Image Update:
+                         - Source: PostImage link
+                         - Style: w-32 h-32 (Square size)
+                         - Shape: rounded-full (Circle)
+                    -->
                     <img 
-                      src="https://picsum.photos/id/64/400/400" 
+                      src="https://i.postimg.cc/vBQpDQkm/IMG-20250924-WA0034.jpg" 
                       alt="Profile Image" 
-                      class="relative w-32 h-32 rounded-full border-4 border-white/20 object-cover shadow-2xl"
+                      class="relative w-32 h-32 rounded-full border-4 border-white/20 object-cover object-top shadow-2xl"
                     />
                 </div>
                 
-                <h1 class="mt-4 text-2xl font-bold text-white tracking-wide drop-shadow-md">
-                    Seu Nome Aqui
+                <h1 class="mt-6 text-2xl font-bold text-white tracking-wide drop-shadow-md">
+                    António Silva
                 </h1>
                 
                 <p class="mt-2 text-sm text-white/80 font-light tracking-wider uppercase">
@@ -103,13 +111,13 @@
             
             <!-- Social Icons -->
             <div class="flex justify-center gap-6 mb-8 w-full">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="Instagram">
+                <a href="https://www.instagram.com/antannio007?igsh=a3liOGcxemQ5N3Rp" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="Instagram">
                     <i class="fab fa-instagram text-2xl"></i>
                 </a>
                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="YouTube">
                     <i class="fab fa-youtube text-2xl"></i>
                 </a>
-                <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="WhatsApp">
+                <a href="https://wa.link/0fahvm" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp text-2xl"></i>
                 </a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="LinkedIn">
@@ -149,7 +157,7 @@
                 </a>
 
                 <!-- Button 3 -->
-                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="group relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-1 block">
+                <a href="https://wa.link/0fahvm" target="_blank" rel="noopener noreferrer" class="group relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-1 block">
                     <div class="absolute inset-0 w-0 bg-white/20 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
                     <div class="relative flex items-center justify-between px-6 py-4">
                         <span class="flex-1 text-center font-medium text-white tracking-wide group-hover:font-semibold transition-all">
@@ -181,7 +189,7 @@
             <!-- Footer -->
             <footer class="mt-8 text-center">
                 <p class="text-xs text-white/40 font-light flex items-center justify-center gap-1">
-                    Feito com <i class="fas fa-bolt text-yellow-400"></i> Google AI Studio
+                    <i class="fas fa-bolt text-yellow-400"></i> 𝐅𝐞𝐢𝐭𝐨 𝐜𝐨𝐦 𝐚 ɴᴇᴜʀᴀᴇx
                 </p>
             </footer>
 

@@ -1,7 +1,7 @@
 import { ProfileData, SocialLink, ButtonLink } from './types';
 
 export const PROFILE_DATA: ProfileData = {
-  name: 'Seu Nome Aqui',
+  name: 'António Silva',
   title: 'Criador de Conteúdo | Marketing Digital',
   // Using a high quality placeholder from Picsum
   imageUrl: 'https://picsum.photos/id/64/400/400', 
@@ -10,7 +10,7 @@ export const PROFILE_DATA: ProfileData = {
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     platform: 'Instagram',
-    url: 'https://instagram.com',
+    url: 'https://www.instagram.com/antannio007?igsh=a3liOGcxemQ5N3Rp',
     iconClass: 'fab fa-instagram',
   },
   {
@@ -20,7 +20,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     platform: 'WhatsApp',
-    url: 'https://whatsapp.com',
+    url: 'https://wa.link/0fahvm',
     iconClass: 'fab fa-whatsapp',
   },
   {
@@ -43,7 +43,7 @@ export const BUTTON_LINKS: ButtonLink[] = [
   },
   {
     title: 'WhatsApp',
-    url: 'https://wa.me/',
+    url: 'https://wa.link/0fahvm',
     iconClass: 'fab fa-whatsapp',
   },
   {
