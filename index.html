@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkBio Luxury</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #0f172a; /* Fallback color */
+      }
+      
+      /* Smooth Gradient Animation */
+      @keyframes gradient-xy {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .animate-gradient-xy {
+        background-size: 400% 400%;
+        animation: gradient-xy 15s ease infinite;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2); 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.4); 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <!-- Main Background Wrapper -->
+    <div class="min-h-screen w-full flex items-center justify-center p-4 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-700 animate-gradient-xy relative">
+      
+      <!-- Texture Overlay (Noise) -->
+      <div class="fixed inset-0 pointer-events-none opacity-[0.03]" style="background-image: url('https://grainy-gradients.vercel.app/noise.svg');"></div>
+
+      <!-- Main Glassmorphism Card -->
+      <div class="relative w-full max-w-md bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden p-8 z-10">
+        
+        <!-- Decorative Glow Orbs -->
+        <div class="absolute -top-20 -right-20 w-40 h-40 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+
+        <!-- Card Content -->
+        <div class="relative z-10 flex flex-col items-center">
+            
+            <!-- Profile Header -->
+            <div class="flex flex-col items-center text-center mb-6">
+                <div class="relative group">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse blur-sm"></div>
+                    <img 
+                      src="https://picsum.photos/id/64/400/400" 
+                      alt="Profile Image" 
+                      class="relative w-32 h-32 rounded-full border-4 border-white/20 object-cover shadow-2xl"
+                    />
+                </div>
+                
+                <h1 class="mt-4 text-2xl font-bold text-white tracking-wide drop-shadow-md">
+                    Seu Nome Aqui
+                </h1>
+                
+                <p class="mt-2 text-sm text-white/80 font-light tracking-wider uppercase">
+                    Criador de Conteúdo | Marketing Digital
+                </p>
+            </div>
+            
+            <!-- Social Icons -->
+            <div class="flex justify-center gap-6 mb-8 w-full">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="Instagram">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="YouTube">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+                <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-white transform hover:scale-110 transition-all duration-300 drop-shadow-lg" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+            </div>
+            
+            <!-- Link Buttons Container -->
+            <div class="flex flex-col w-full gap-4">
+                
+                <!-- Button 1 -->
+                <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="group relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-1 block">
+                    <div class="absolute inset-0 w-0 bg-white/20 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                    <div class="relative flex items-center justify-between px-6 py-4">
+                        <span class="flex-1 text-center font-medium text-white tracking-wide group-hover:font-semibold transition-all">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            Meu Curso
+                        </span>
+                        <span class="absolute right-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-white">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Button 2 -->
+                <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="group relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-1 block">
+                    <div class="absolute inset-0 w-0 bg-white/20 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                    <div class="relative flex items-center justify-between px-6 py-4">
+                        <span class="flex-1 text-center font-medium text-white tracking-wide group-hover:font-semibold transition-all">
+                            <i class="fas fa-server mr-2"></i>
+                            Hospedagem
+                        </span>
+                        <span class="absolute right-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-white">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Button 3 -->
+                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="group relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-1 block">
+                    <div class="absolute inset-0 w-0 bg-white/20 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                    <div class="relative flex items-center justify-between px-6 py-4">
+                        <span class="flex-1 text-center font-medium text-white tracking-wide group-hover:font-semibold transition-all">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            WhatsApp
+                        </span>
+                        <span class="absolute right-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-white">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Button 4 -->
+                <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="group relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-1 block">
+                    <div class="absolute inset-0 w-0 bg-white/20 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                    <div class="relative flex items-center justify-between px-6 py-4">
+                        <span class="flex-1 text-center font-medium text-white tracking-wide group-hover:font-semibold transition-all">
+                            <i class="fas fa-book-open mr-2"></i>
+                            E-book Grátis
+                        </span>
+                        <span class="absolute right-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-white">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+            
+            <!-- Footer -->
+            <footer class="mt-8 text-center">
+                <p class="text-xs text-white/40 font-light flex items-center justify-center gap-1">
+                    Feito com <i class="fas fa-bolt text-yellow-400"></i> Google AI Studio
+                </p>
+            </footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
