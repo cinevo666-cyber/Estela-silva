@@ -37,9 +37,9 @@ export const BUTTON_LINKS: ButtonLink[] = [
     iconClass: 'fas fa-graduation-cap',
   },
   {
-    title: 'Hospedagem',
-    url: 'https://google.com',
-    iconClass: 'fas fa-server',
+    title: 'Localização',
+    url: 'https://maps.app.goo.gl/3uyR98YE5Ynq6hQ89',
+    iconClass: 'fas fa-map-marker-alt',
   },
   {
     title: 'WhatsApp',
